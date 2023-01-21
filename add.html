@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top"></div>
+    <div class="header">
+        <div class="wrap">
+            <div class="menu">
+                <a href="index.html"><img src="images/alarm.png" alt=""></a>
+                <h1>ระบบแจ้งเหตุร้องเรียน</h1>
+            </div>
+        </div>
+    </div>
+    <div class="add">
+        <div class="wrap">
+            <h2>ระบบรับแจ้งเหตุสำหรับประชาชน</h2>
+            <form action="r_add.php" method="post" enctype="multipart/form-data">
+                <label for="">เรื่องที่ต้องการแจ้ง</label>
+                <input type="text" name="txttopic">
+                <div class="row">
+                    <div class="f-l">
+                        <label for="">ชื่อจริง</label>
+                        <input type="text" name="txtname">
+                    </div>
+                    <div class="f-r">
+                        <label for="">นามสกุล</label>
+                        <input type="text" name="txtlastname">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <label for="">จุดเกิดเหตุ</label>
+                <textarea name="txtposition" cols="30" rows="10"></textarea>
+                <input type="file" name="fiupload">
+                <label for="">รายละเอียด</label>
+                <textarea name="txtdetail" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="ส่งเรื่องร้องเรียน">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
